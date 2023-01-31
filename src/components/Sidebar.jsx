@@ -40,7 +40,7 @@ const Sidebar = () => {
   return (
     <div className="h-screen">
       <div className="flex h-full flex-col justify-center">
-        <div className="flex-1" />
+        <div className="flex-1">Languague: en</div>
         <div className="flex flex-1 flex-col justify-center">
           {navList.map((item) => (
             <NavLink

@@ -26,7 +26,7 @@ const Home = () => {
       </div>
       <div className="relative z-10 flex-1 overflow-visible">
         <div
-          className={` absolute -top-[500px] z-10 h-[1000px]  w-[1000px] overflow-hidden rounded-full bg-orange-900`}
+          className={`absolute -top-[500px] z-10 h-[1000px] w-[1000px] overflow-hidden rounded-full bg-orange-900`}
         >
           <img
             src={f1}
@@ -36,7 +36,7 @@ const Home = () => {
           <img
             src={photo}
             alt="Me"
-            className="absolute right-[50%] bottom-0 w-1/3"
+            className="absolute right-[25%] bottom-0 w-1/2 "
           />
         </div>
         <div
