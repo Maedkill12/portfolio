@@ -17,6 +17,8 @@ const en = {
     "Let's work together to bring your web presence to the next level!",
   ],
   toolYears: "years of experience",
+  projects: "My projects",
+  viewProject: "View Project",
 };
 
 export default en;

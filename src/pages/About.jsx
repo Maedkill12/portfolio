@@ -23,7 +23,9 @@ const About = () => {
         <h2 className="text-6xl font-bold text-orange-500">{lang.about}</h2>
         <div className="">
           {lang.aboutParagraph.map((p) => (
-            <p className="my-4 text-justify text-lg">{p}</p>
+            <p key={p} className="my-4 text-justify text-lg">
+              {p}
+            </p>
           ))}
         </div>
       </div>

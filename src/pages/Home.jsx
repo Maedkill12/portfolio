@@ -7,7 +7,7 @@ const Home = () => {
   const { lang } = useLanguage();
 
   return (
-    <div className="flex h-screen flex-row">
+    <div className="flex h-screen flex-row overflow-hidden">
       <div className=" relative z-0 flex flex-1 items-center pl-4">
         <div>
           <div className="my-8 border-l border-orange-500 pl-8">
