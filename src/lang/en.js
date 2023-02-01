@@ -7,7 +7,7 @@ const en = {
   navHome: "Home",
   navAbout: "About",
   navSkills: "Skills",
-  navPortfolio: "Portfolio",
+  navPortfolio: "Projects",
   navContact: "Contact",
   about: "About Me",
   aboutParagraph: [
@@ -16,6 +16,7 @@ const en = {
     "Whether it's through unique animations or creative layouts, my goal is to make a lasting impression and provide an unforgettable user experience.",
     "Let's work together to bring your web presence to the next level!",
   ],
+  toolYears: "years of experience",
 };
 
 export default en;

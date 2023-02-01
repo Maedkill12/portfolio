@@ -12,7 +12,7 @@ const About = () => {
           <img src={me} alt="Alejandro Elias" className="relative z-10" />
         </div>
         <div
-          className={`blue__gradient absolute z-0 h-[600px] w-[600px] overflow-hidden rounded-full`}
+          className={`white__gradient absolute z-0 h-[550px] w-[550px] overflow-hidden rounded-full`}
         />
         <p className="z-10">Alejandro Elias</p>
         <p className="z-10 mt-4 flex flex-row items-center gap-2 text-lg">
@@ -21,9 +21,9 @@ const About = () => {
       </div>
       <div className="flex flex-1 flex-col justify-center px-16">
         <h2 className="text-6xl font-bold text-orange-500">{lang.about}</h2>
-        <div className="h-[200px]">
+        <div className="">
           {lang.aboutParagraph.map((p) => (
-            <p className="text-justify text-lg">{p}</p>
+            <p className="my-4 text-justify text-lg">{p}</p>
           ))}
         </div>
       </div>
