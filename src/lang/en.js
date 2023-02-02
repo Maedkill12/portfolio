@@ -19,6 +19,12 @@ const en = {
   toolYears: "years of experience",
   projects: "My projects",
   viewProject: "View Project",
+  emailPlaceholder: "Email",
+  namePlaceholder: "Name",
+  subjectPlaceholder: "Subject",
+  messagePlaceholder: "Message",
+  send: "Send Message",
+  getInTouch: "Get In Touch",
 };
 
 export default en;

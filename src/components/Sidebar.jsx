@@ -1,26 +1,15 @@
 import React, { useEffect, useState } from "react";
-import {
-  AiFillHome,
-  AiFillInfoCircle,
-  AiFillGithub,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import { AiFillHome, AiFillInfoCircle } from "react-icons/ai";
 import { BsCodeSlash, BsFillBriefcaseFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import useLanguage from "../hooks/useLanguage";
-
-const socialMedia = [
-  { icon: <AiFillGithub />, url: "https://github.com/Maedkill12" },
-  {
-    icon: <AiFillLinkedin />,
-    url: "https://www.linkedin.com/in/alejandro-elias-3a9502168/",
-  },
-];
+import useSocialMedia from "../hooks/useSocialMedia";
 
 const Sidebar = () => {
   const [navList, setNavList] = useState([]);
   const { lang } = useLanguage();
+  const socialMedia = useSocialMedia();
 
   useEffect(() => {
     const menu = [
