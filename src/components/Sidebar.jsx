@@ -5,11 +5,19 @@ import { MdEmail } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import useLanguage from "../hooks/useLanguage";
 import useSocialMedia from "../hooks/useSocialMedia";
+import * as langs from "../lang";
 
 const Sidebar = () => {
   const [navList, setNavList] = useState([]);
-  const { lang } = useLanguage();
+  const [langSelect, setLangSelect] = useState("en");
+  const { lang, dispatch } = useLanguage();
   const socialMedia = useSocialMedia();
+
+  const languageHandle = (e) => {
+    const newLang = e.target.value;
+    setLangSelect(newLang);
+    dispatch({ type: "CHANGE", payload: langs[newLang] });
+  };
 
   useEffect(() => {
     const menu = [
@@ -29,7 +37,22 @@ const Sidebar = () => {
   return (
     <div className="h-screen">
       <div className="flex h-full flex-col justify-center">
-        <div className="flex-1">Languague: en</div>
+        <div className="flex-1 py-1 px-4">
+          <div className="flex flex-row gap-1">
+            {lang.language}:{" "}
+            <select
+              value={langSelect}
+              className="bg-transparent"
+              onChange={languageHandle}
+            >
+              {Object.keys(langs).map((abb) => (
+                <option value={abb} key={abb} className="text-black">
+                  {langs[abb].name}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
         <div className="flex flex-1 flex-col justify-center">
           {navList.map((item) => (
             <NavLink

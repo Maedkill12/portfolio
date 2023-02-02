@@ -1,5 +1,33 @@
 const es = {
+  abbreviation: "es",
+  name: "Español",
+  language: "Idioma",
   greet: "Hola",
+  pronoun: "Soy",
+  area: "Desarollador Fullstack",
+  contact: "¡Contáctame!",
+  slogan: "Desarrollador web innovador, apasionado y experimentado.",
+  navHome: "Inicio",
+  navAbout: "Sobre mí",
+  navSkills: "Habilidades",
+  navPortfolio: "Proyectos",
+  navContact: "Contacto",
+  about: "Sobre Mí",
+  aboutParagraph: [
+    "Hola, soy Alejandro y soy de México. Soy un desarrollador web full-stack con pasión por crear sitios web atractivos y fáciles de usar. Con un sólido conocimiento tanto en el desarrollo front-end como back-end, puedo dar vida a la visión de mis clientes desde el principio hasta el final.",
+    "Mis habilidades técnicas incluyen HTML, CSS, JavaScript y varios frameworks y herramientas como React, Node.js y MongoDB. Cuando se trata de diseño, siempre voy más allá de los límites y explorando nuevas formas de hacer que los sitios web se destaquen y atraigan a los usuarios.",
+    "Ya sea a través de animaciones únicas o diseños creativos, mi objetivo es dejar una impresión duradera y proporcionar una experiencia de usuario inolvidable.",
+    "¡Trabajemos juntos para llevar su presencia en la web al siguiente nivel!",
+  ],
+  toolYears: "años de experiencia",
+  projects: "Mis proyectos",
+  viewProject: "Ver proyecto",
+  emailPlaceholder: "Correo Electrónico",
+  namePlaceholder: "Nombre",
+  subjectPlaceholder: "Asunto",
+  messagePlaceholder: "Mensaje",
+  send: "Enviar Mensaje",
+  getInTouch: "Ponerse En Contacto",
 };
 
 export default es;
