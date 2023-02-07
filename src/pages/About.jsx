@@ -6,7 +6,7 @@ import me from "../assets/me.jpg";
 const About = () => {
   const { lang } = useLanguage();
   return (
-    <div className="flex min-h-screen flex-row">
+    <div className="flex min-h-screen flex-col xl:flex-row">
       <div className="flex flex-1 flex-col items-center justify-center px-16">
         <div className="relative h-[500px] w-[500px] overflow-hidden rounded-full ">
           <img src={me} alt="Alejandro Elias" className="relative z-10" />
@@ -19,7 +19,7 @@ const About = () => {
           <MdEmail /> maed012014@gmail.com
         </p>
       </div>
-      <div className="flex flex-1 flex-col justify-center px-16">
+      <div className="mt-8 flex flex-1 flex-col justify-center px-16 xl:mt-0">
         <h2 className="text-6xl font-bold text-orange-500">{lang.about}</h2>
         <div className="">
           {lang.aboutParagraph.map((p) => (

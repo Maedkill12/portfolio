@@ -2,7 +2,7 @@ import React from "react";
 
 const ToolCard = ({ name, Icon, description }) => {
   return (
-    <div className="flex w-[45%] flex-row gap-2 rounded-xl border border-white bg-slate-700 py-4 px-2">
+    <div className="flex w-full flex-row gap-2 rounded-xl border border-white bg-slate-700 py-4 px-2 sm:w-[45%]">
       <div className="flex items-center">
         <Icon size={48} />
       </div>

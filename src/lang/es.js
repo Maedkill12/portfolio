@@ -28,6 +28,8 @@ const es = {
   messagePlaceholder: "Mensaje",
   send: "Enviar Mensaje",
   getInTouch: "Ponerse En Contacto",
+  emailSuccess: "Correo electrónico enviado",
+  emailError: "Ha ocurrido un error, intente más tarde",
 };
 
 export default es;

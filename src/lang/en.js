@@ -28,6 +28,8 @@ const en = {
   messagePlaceholder: "Message",
   send: "Send Message",
   getInTouch: "Get In Touch",
+  emailSuccess: "Email Sent",
+  emailError: "An error has ocurred, try again later",
 };
 
 export default en;

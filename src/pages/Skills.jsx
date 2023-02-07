@@ -39,7 +39,7 @@ const backEndSkills = [
 const Skills = () => {
   return (
     <div className="relative h-full min-h-screen w-full">
-      <div className="relative z-10 flex h-full min-h-screen w-full flex-row items-center justify-center gap-4">
+      <div className="relative z-10 my-4 flex h-full min-h-screen w-full flex-col items-center justify-center gap-4 xl:my-0 xl:flex-row">
         <SkillCard
           titile={"Frontend"}
           list={frontEndSkills}

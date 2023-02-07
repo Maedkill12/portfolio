@@ -31,10 +31,10 @@ const Contact = () => {
         form.current,
         "JbkqNf_m39oVj_Mdh"
       );
-      toast.success("Email Sent", toastOptions);
+      toast.success(lang.emailSuccess, toastOptions);
       form.current.reset();
     } catch (error) {
-      toast.error(error, toastOptions);
+      toast.error(lang.emailError, toastOptions);
     } finally {
       setSendingEmail(false);
     }
@@ -42,8 +42,8 @@ const Contact = () => {
 
   return (
     <>
-      <div className="relative flex h-full min-h-screen w-full flex-row items-center">
-        <div className="relative z-10 flex h-[500px] flex-1 flex-col justify-center px-4">
+      <div className="relative flex h-full min-h-screen w-full flex-col items-center py-8 lg:flex-row lg:py-0">
+        <div className="relative z-10 flex h-[500px] w-10/12 flex-1 flex-col justify-center px-4 lg:w-auto">
           <h2 className="text-center text-6xl font-bold text-orange-500">
             {lang.contact}
           </h2>
@@ -52,18 +52,20 @@ const Contact = () => {
             onSubmit={handleSubmit}
             ref={form}
           >
-            <div className="flex w-10/12 flex-row justify-center gap-2">
+            <div className="flex w-10/12 flex-col justify-center gap-4 lg:flex-row lg:gap-2">
               <input
                 type="text"
                 placeholder={lang.namePlaceholder}
                 name="name"
-                className="flex-1 border-b-4 border-transparent bg-gray-800 py-4 px-2 text-xl shadow-lg shadow-black outline-none focus:border-solid focus:border-orange-500"
+                className="w-full border-b-4 border-transparent bg-gray-800 py-4 px-2 text-xl shadow-lg shadow-black outline-none focus:border-solid focus:border-orange-500"
+                required
               />
               <input
                 type="email"
                 placeholder={lang.emailPlaceholder}
                 name="email"
-                className="flex-1 border-b-4 border-transparent bg-gray-800 py-4 px-2 text-xl shadow-lg shadow-black outline-none focus:border-solid focus:border-orange-500"
+                className="w-full border-b-4 border-transparent bg-gray-800 py-4 px-2 text-xl shadow-lg shadow-black outline-none focus:border-solid focus:border-orange-500"
+                required
               />
             </div>
             <input
@@ -71,16 +73,18 @@ const Contact = () => {
               placeholder={lang.subjectPlaceholder}
               name="subject"
               className="w-10/12 border-b-4 border-transparent bg-gray-800 py-4 px-2 text-xl shadow-lg shadow-black outline-none focus:border-solid focus:border-orange-500"
+              required
             />
             <textarea
               className="h-full max-h-full w-10/12 border-b-4 border-transparent bg-gray-800 py-4 px-2 text-xl shadow-lg shadow-black outline-none focus:border-solid focus:border-orange-500"
               name="message"
               placeholder={lang.messagePlaceholder}
+              required
             ></textarea>
             <button
               type="submit"
               disabled={sendingEmail}
-              className={`rounded-2xl border border-solid border-orange-500 py-2 px-4 text-lg shadow-lg shadow-black hover:bg-orange-500 disabled:opacity-70 ${
+              className={`mt-4 w-10/12 rounded-2xl border border-solid border-orange-500 bg-orange-500 py-2 px-4 text-lg shadow-lg shadow-black hover:bg-orange-500 disabled:opacity-70  ${
                 sendingEmail && "cursor-not-allowed"
               }`}
             >
@@ -88,7 +92,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div className="relative z-10 flex h-[500px] flex-1 flex-col justify-center px-4">
+        <div className="relative z-10 mt-20 flex h-[500px] w-10/12 flex-1 flex-col justify-center px-4 lg:mt-0 lg:w-auto">
           <h2 className="text-center text-6xl font-bold text-orange-500">
             {lang.getInTouch}
           </h2>

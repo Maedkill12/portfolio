@@ -35,9 +35,9 @@ const Sidebar = () => {
   }, [lang]);
 
   return (
-    <div className="h-screen">
-      <div className="flex h-full flex-col justify-center">
-        <div className="flex-1 py-1 px-4">
+    <div className="md:h-screen">
+      <div className="flex h-full flex-row justify-between md:flex-col md:justify-center">
+        <div className="my-4 hidden py-2 px-4 md:my-0 md:block md:flex-1">
           <div className="flex flex-row gap-1">
             {lang.language}:{" "}
             <select
@@ -53,23 +53,23 @@ const Sidebar = () => {
             </select>
           </div>
         </div>
-        <div className="flex flex-1 flex-col justify-center">
+        <div className="my-4 flex flex-row justify-center md:my-0 md:flex-1 md:flex-col">
           {navList.map((item) => (
             <NavLink
               key={item.text}
               to={item.path}
               className={({ isActive }) =>
-                `flex flex-row gap-4 py-2 px-4 text-lg hover:bg-black/20 ${
+                `flex flex-row gap-2 py-2 px-4 hover:bg-black/20 md:gap-4 md:text-lg ${
                   isActive && "text-orange-500"
                 } `
               }
             >
-              {item.icon}
+              <div className="hidden sm:block">{item.icon}</div>
               {item.text}
             </NavLink>
           ))}
         </div>
-        <div className="flex flex-1 flex-col items-center gap-4">
+        <div className="my-4 hidden flex-col gap-4 px-4 md:my-0 md:flex md:flex-1 md:items-center md:px-0">
           {socialMedia.map((item) => (
             <a
               className="text-3xl hover:text-orange-500"

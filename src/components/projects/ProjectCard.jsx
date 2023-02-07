@@ -9,7 +9,7 @@ const ProjectCard = ({ title, img, demo }) => {
       href={demo}
       target="_blank"
       rel="noreferrer"
-      className="relative h-[400px] w-[400px] hover:opacity-80"
+      className="relative h-[300px] w-[300px] hover:opacity-80"
       onMouseEnter={() => setShowViewProjectButton(true)}
       onMouseLeave={() => setShowViewProjectButton(false)}
     >

@@ -34,7 +34,7 @@ const Portfolio = () => {
         {lang.projects}
       </h2>
       <div className="flex w-full justify-center">
-        <div className="mt-4 flex h-full w-[1200px] flex-row flex-wrap">
+        <div className="mt-4 flex h-full w-[600px] flex-col flex-wrap items-center sm:flex-row lg:w-[900px]">
           {projects.map((project) => (
             <ProjectCard
               key={project.title}
